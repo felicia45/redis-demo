@@ -1,0 +1,33 @@
+
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*/*.iml
+*.ipr
+*.log
+QZD_LOG_PATH_IS_UNDEFINED/
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+/bin/
+
+rest-api
+
+

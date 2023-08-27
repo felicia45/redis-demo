@@ -130,6 +130,7 @@ public class RedisLock implements Lock {
     }
 
     private void afterLocked() {
+        // 每个分布式锁都需要起一个守护进程 浪费资源
         RedisLockDaemonRunner runner = new RedisLockDaemonRunner(this);
         daemon = new Thread(runner, String.format("RedisLock-%s-daemon", this.getExclusiveOwner()));
         daemon.setDaemon(true);
